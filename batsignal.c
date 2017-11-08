@@ -23,13 +23,10 @@ int main(){
   signal(SIGINT, sighandler);
   signal(SIGUSR1, sighandler);
 
-  
-  
   while(1){
     printf("Hi I'm: %d\n",getpid());
     sleep(1);
   }
-
   return 0;
   
 }
