@@ -14,7 +14,7 @@ static void sighandler(int signo){
   }
   
   if(signo == SIGUSR1){
-    printf("Hi I'm the parent: %d\n",getpid());
+    printf("Hi I'm the parent: %d\n",getppid());
   }
 }
 
